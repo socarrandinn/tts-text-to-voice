@@ -1,0 +1,36 @@
+{
+  "favorites": [
+    "es-MX-JorgeNeural",
+    "es-MX-DaliaNeural",
+    "es-ES-AlvaroNeural"
+  ],
+  "last_voice": "es-MX-JorgeNeural",
+  "audio_format": "mp3",
+  "last_settings": {
+    "speed": 0.9,
+    "volume": 0.9,
+    "pitch": -0.3,
+    "clarity": 2,
+    "style": "General"
+  },
+  "saved_presets": {
+    "default": {
+      "speed": 1.0,
+      "volume": 1.0,
+      "pitch": 0.0,
+      "clarity": 0,
+      "style": "General",
+      "voice": "es-MX-DaliaNeural",
+      "format": "mp3"
+    },
+    "voz-grabe": {
+      "voice": "es-MX-JorgeNeural",
+      "speed": 0.9,
+      "volume": 0.9,
+      "pitch": -0.3,
+      "clarity": 2,
+      "style": "General",
+      "format": "mp3"
+    }
+  }
+}
