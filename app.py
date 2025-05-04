@@ -166,7 +166,7 @@ async def generar_audio(
 
         config = load_config()
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-        file_name = f"sermon_{timestamp}.{formato}"
+        file_name = f"audio_{timestamp}.{formato}"
         output_file = Path(AUDIO_FOLDER) / file_name
 
         # Prepare TTS parameters
@@ -175,7 +175,6 @@ async def generar_audio(
             voice=voz,
             rate=f"{'+' if velocidad >= 1.0 else ''}{(velocidad - 1.0) * 100:.0f}%",
             volume=f"{'+' if intensidad >= 1.0 else ''}{(intensidad - 1.0) * 100:.0f}%",
-            pitch=f"{'+' if tono >= 0 else ''}{tono * 50:.0f}Hz",
         )
 
         # Actually generate and save the audio file
@@ -243,7 +242,6 @@ async def generar_preview(texto, voz, velocidad, intensidad, tono, clarity, esti
             voice=voz,
             rate=f"{'+' if velocidad >= 1.0 else ''}{(velocidad - 1.0) * 100:.0f}%",
             volume=f"{'+' if intensidad >= 1.0 else ''}{(intensidad - 1.0) * 100:.0f}%",
-            pitch=f"{'+' if tono >= 0 else ''}{tono * 50:.0f}Hz",
         )
 
         # Generate and save the preview
@@ -405,7 +403,7 @@ def crear_interfaz():
     with gr.Blocks(title="Generador de Sermones", theme=gr.themes.Soft()) as interfaz:
         gr.Markdown(
             """
-            # 🎤 Generador de Sermones Automático
+            # 🎤 Generador de audios Automático
             
             Convierte texto a voz con diferentes acentos españoles y ajustes personalizados.
             """
