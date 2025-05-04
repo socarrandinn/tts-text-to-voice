@@ -4,14 +4,14 @@
     "es-MX-DaliaNeural",
     "es-ES-AlvaroNeural"
   ],
-  "last_voice": "es-MX-JorgeNeural",
+  "last_voice": "es-MX-DaliaNeural",
   "audio_format": "mp3",
   "last_settings": {
-    "speed": 0.9,
-    "volume": 0.9,
-    "pitch": -0.3,
-    "clarity": 2,
-    "style": "General"
+    "speed": 1.0,
+    "volume": 1.0,
+    "pitch": 0.0,
+    "clarity": 0,
+    "style": "Excited"
   },
   "saved_presets": {
     "default": {

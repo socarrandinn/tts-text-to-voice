@@ -497,7 +497,7 @@ def crear_interfaz():
                         )
 
                 with gr.Row():
-                    boton = gr.Button("🎙️ Generar Sermón", variant="primary", size="lg")
+                    boton = gr.Button("🎙️ Generar", variant="primary", size="lg")
                     play_btn = gr.Button("▶️ Reproducir", interactive=False)
                     preview_btn = gr.Button("👂 Vista Previa", size="sm")
 
